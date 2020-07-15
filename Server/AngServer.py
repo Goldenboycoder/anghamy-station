@@ -64,7 +64,7 @@ def setMusic(group):
             if toplay.split('.')[1]=='mp3':
                 dst=toplay.split('.')[0]+'.wav'
                 sound=AudioSegment.from_mp3(toplay)
-                sound.export(dst,format='wav')
+                sound.export(mypath+dst,format='wav')
                 toplay=dst
         for conn in usercon:
             #conn.uid != ThisUser.uid and 
